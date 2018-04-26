@@ -1,18 +1,23 @@
 package application;
 
-import application.controller.IntroCon;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import controller.IntroCon;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import model.OpCode;
+import model.SystemModel;
 
-import java.io.IOException;
+
 
 public class Main extends Application {
 
@@ -35,14 +40,16 @@ public class Main extends Application {
 	public void init(){
 		//create the scenes for views
 		try {
-			Parent introView = FXMLLoader.load(getClass().getResource("view/IntroView.fxml"));
+			Parent introView = FXMLLoader.load(getClass().getResource("/view/IntroView.fxml"));
 			intro = new Scene(introView, 640, 480);
-			Parent mainView = FXMLLoader.load(getClass().getResource("view/MainView.fxml"));
+			Parent mainView = FXMLLoader.load(getClass().getResource("/view/MainView.fxml"));
 			main = new Scene(mainView, 1280, 800);
-			Parent popupView = FXMLLoader.load(getClass().getResource("view/PopupView.fxml"));
+			Parent popupView = FXMLLoader.load(getClass().getResource("/view/PopupView.fxml"));
 			popupMenu = new Scene(popupView, 200, 260);
-			Parent optionView = FXMLLoader.load(getClass().getResource("view/OptionView.fxml"));
+			Parent optionView = FXMLLoader.load(getClass().getResource("/view/OptionView.fxml"));
 			options = new Scene(optionView, 640, 480);
+			
+			
 		} catch (IOException e) {
 			//if any scene fails, exit with error trace
 			e.printStackTrace();
@@ -89,8 +96,9 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) {
+		
 		//launch the program
-        System.out.println(Font.getFamilies());
+		//SystemModel d = new SystemModel();
 		launch(args);
 	}
 
@@ -102,6 +110,7 @@ public class Main extends Application {
 		return displayStage;
 	}
 }
+
 
 
 

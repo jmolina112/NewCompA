@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="299cb1a9-35f0-4fc3-af1f-e71368e0fac4" name="Default" comment="" />
+    <list default="true" id="299cb1a9-35f0-4fc3-af1f-e71368e0fac4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.fxbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/IntroCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/MainCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/Lol.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/Woke.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Adder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/AssemblerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CPUModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Decoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Demux.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/EPROM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/LogicFunc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/MUX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/MUX2to1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/MUX4to1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/MUX8to1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/OpCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ProgramLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/RAM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Register16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Register4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Register8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Runtime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/SystemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/TGate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/IntroView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/MainView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/OptionView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/PopupView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/OpcodeOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/OpcodeOutput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/opcode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/opcode.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +56,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="99" column="7" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="7" />
+            <state>
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/application/model/Slide.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="769">
-              <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+              <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,7 +127,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/model/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1462">
@@ -124,13 +164,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/application/view/application.css" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/application/model/Runtime.java" />
         <option value="$PROJECT_DIR$/src/application/data/DataPath.txt" />
         <option value="$PROJECT_DIR$/src/application/model/Sprite.java" />
         <option value="$PROJECT_DIR$/src/application/controller/MainCon.java" />
         <option value="$PROJECT_DIR$/src/application/model/Slide.java" />
         <option value="$PROJECT_DIR$/src/application/model/SystemModel.java" />
+        <option value="$PROJECT_DIR$/src/application/Main.java" />
       </list>
     </option>
   </component>
@@ -293,6 +333,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524705483499</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merging">
+      <created>1524780697151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524780697151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -306,13 +354,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="895" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.32950193" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -337,6 +386,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merging" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/application/Main.java">
@@ -681,16 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="99" column="7" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/model/Runtime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -725,7 +768,7 @@
     <entry file="file://$PROJECT_DIR$/src/application/model/Slide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
-          <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -740,6 +783,15 @@
             <element signature="imports" expanded="true" />
             <element signature="e#6251#6252#0" expanded="true" />
             <element signature="e#6283#6284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
