@@ -36,7 +36,7 @@ public class Sprite{
 		
 		try {
 			turnOn = new Image(new FileInputStream("Resources/COMP_ON.png"));
-			turnOff = new Image(new FileInputStream("ReSsources/COMP_OFF.png"));
+			turnOff = new Image(new FileInputStream("Resources/COMP_OFF.png"));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
