@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@../application.css" translateX="1.0" translateY="1.0" translateZ="1.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainCon">
+   <children>
+      <SplitPane dividerPositions="0.2" layoutY="90.0" prefHeight="710.0" prefWidth="1280.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="180.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="10.0" text="Instruction Pointer" />
+                  <Label layoutX="20.0" layoutY="60.0" text="Stack Pointer" />
+                  <Label layoutX="20.0" layoutY="160.0" text="Register 0" />
+                  <Label layoutX="20.0" layoutY="210.0" text="Register 1" />
+                  <Label layoutX="20.0" layoutY="260.0" text="Register 2" />
+                  <Label layoutX="20.0" layoutY="310.0" text="Register 3" />
+                  <Label layoutX="20.0" layoutY="110.0" text="Flag register" />
+                  <Label fx:id="stackPointerValue" layoutX="40.0" layoutY="80.0" text="Label" />
+                  <Label fx:id="instPointerValue" layoutX="40.0" layoutY="30.0" text="Label" />
+                  <Label fx:id="flagsValue" layoutX="40.0" layoutY="130.0" text="Label" />
+                  <Label fx:id="register0Value" layoutX="40.0" layoutY="180.0" text="Label" />
+                  <Label fx:id="register1Value" layoutX="40.0" layoutY="230.0" text="Label" />
+                  <Label fx:id="register2Value" layoutX="40.0" layoutY="280.0" text="Label" />
+                  <Label fx:id="register3Value" layoutX="40.0" layoutY="330.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="710.0" prefWidth="1100.0">
+              <content>
+                <AnchorPane prefHeight="620.0" prefWidth="1000.0">
+                     <children>
+                        <Canvas fx:id="emulatorDisplay" height="875.0" width="1325.0" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="40.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="65.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="90.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+    <Button fx:id="power" alignment="CENTER" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="60.0" text="Power" textAlignment="CENTER" />
+      <Slider fx:id="progressBar" layoutX="430.0" layoutY="50.0" prefHeight="20.0" prefWidth="190.0" />
+      <Label layoutX="14.0" layoutY="50.0" prefHeight="20.0" text="Load File" />
+      <Button fx:id="pause" layoutX="430.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" text="Pause" />
+      <Button fx:id="play" layoutX="530.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" text="Play" />
+      <Button fx:id="back" layoutX="480.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" text="Back" />
+      <Button fx:id="forward" layoutX="580.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" text="Forward" />
+      <Label layoutX="246.0" layoutY="20.0" prefHeight="20.0" text="Instruction Buffer" />
+      <ComboBox fx:id="loadFile" layoutX="90.0" layoutY="50.0" prefHeight="25.0" prefWidth="100.0" promptText="Select File" />
+      <TextField fx:id="instBuffer" layoutX="230.0" layoutY="50.0" prefHeight="20.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>
