@@ -1,0 +1,57 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.nameLabel{
+	-fx-min-height: 40px;
+	-fx-min-width: 48px;
+	-fx-padding: 10 10 10 10;
+	
+	-fx-background-color: white;
+	-fx-text-fill: yellow;
+	-fx-font-size: 36;
+}
+.buttonClass{
+	-fx-background-size: 30px 30px;
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+	-fx-min-height: 50px;
+	-fx-min-width: 50px;
+	
+	
+	-fx-background-color: linear-gradient: (#a6a6a6, #666666);
+	-fx-stroke: black;
+	-fx-stroke-width: 5px;
+	-fx-border-style: solid;
+	
+}
+
+
+.buttonClass:hover{
+	-fx-cursor: hand;
+}
+
+.buttonClass:pressed{
+	-fx-background-color: #CCCCCC;
+}
+
+.power{
+	-fx-min-height: 40px;
+	-fx-min-width: 75px;
+	-fx-background-color: white;
+}
+
+.power:hover{
+	-fx-background-color: #CCCCCC;
+	-fx-background-image:  url("file:../EmulatorCPU853/images/powerOn.png");
+	-fx-border: 2px solid black;
+}
+
+.power:pressed{
+	-fx-background-color: green;
+}
+
+.labelVal{
+	-fx-background-color:  grey;
+	-fx-stroke: white;
+	
+	-fx-border-style: solid;
+	-fx-border-width: 0 0 2 0;
+}

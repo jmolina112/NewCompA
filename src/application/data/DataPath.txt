@@ -1,0 +1,37 @@
+/**
+*First token is the Component, e, which is where the data path starts
+*The following tokens are the DataPaths that e connects to
+*
+*/
+
+U118A U114
+U118B U114
+
+
+U114 U10 U11 U12 U13
+
+//Registers -> 8-1 Mux
+U10 U112 U113
+U11 U112 U113
+U12 U112 U113
+U13 U112 U113
+
+//8-1 Mux -> Aritmetic Gates
+U112 U100 U101 U102 U103 U104 U117
+U113 U100 U101 U102 U103 U104 U117
+
+//Aritmetic Gates -> U111 8-1 Mux
+U100 U111
+U101 U111
+U102 U111
+U103 U111
+U104 U111
+
+U107 U117
+U117 U14
+
+U500 U105 U106 U115 U116
+U105 U115
+U106 U115
+U115 U15
+U15 U116

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: grey;" stylesheets="@application.css" translateX="1.0" translateY="1.0" translateZ="1.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainCon">
+   <children>
+      <SplitPane dividerPositions="0.14632237871674492" layoutY="78.0" prefHeight="722.0" prefWidth="1280.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="180.0" style="-fx-background-color: #4d4d4d;">
+               <children>
+                  <VBox layoutX="13.0" layoutY="56.0" prefHeight="250.0" prefWidth="158.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="160.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Instruction Pointer" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="instPointerValue" prefHeight="17.0" prefWidth="166.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="161.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Stack Pointer" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="stackPointerValue" prefHeight="17.0" prefWidth="162.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="164.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Flag register" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="flagsValue" prefHeight="17.0" prefWidth="165.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="168.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Register 0" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="register0Value" prefHeight="17.0" prefWidth="162.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="158.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Register 1" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="register1Value" prefHeight="17.0" prefWidth="160.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="171.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Register 2" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="register2Value" prefHeight="17.0" prefWidth="162.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="161.0" style="-fx-border-width: 0 0 0 2; -fx-border-style: solid;" text="Register 3" textFill="#ce7828">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="register3Value" prefHeight="17.0" prefWidth="158.0" styleClass="labelVal" text="Label" textFill="#e4d6a7">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <Text layoutX="49.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Values">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ScrollPane prefHeight="708.0" prefWidth="1060.0">
+              <content>
+                <AnchorPane prefHeight="620.0" prefWidth="1000.0">
+                     <children>
+                        <Canvas fx:id="emulatorDisplay" height="875.0" width="1325.0" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="40.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="65.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="90.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Documents/Class%20Textbooks/CS%203851%20Comp%20Arch/project/Alphas.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+    <Button fx:id="power" alignment="CENTER" layoutX="10.0" layoutY="17.0" maxWidth="65.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="65.0" style="-fx-background-image: url(&quot;file:../EmulatorCPU853/images/power.png&quot;);" textAlignment="CENTER">
+         <styleClass>
+            <String fx:value="buttonClass" />
+            <String fx:value="power" />
+         </styleClass></Button>
+      <Slider fx:id="progressBar" layoutX="657.0" layoutY="31.0" prefHeight="20.0" prefWidth="190.0" />
+      <Label layoutX="262.0" layoutY="4.0" prefHeight="20.0" text="Instruction Buffer" />
+      <ComboBox fx:id="loadFile" layoutX="105.0" layoutY="25.0" prefHeight="25.0" prefWidth="100.0" promptText="Select File" style="-fx-background-color: #CCCCCC; -fx-text-fill: orange;" />
+      <TextField fx:id="instBuffer" layoutX="230.0" layoutY="25.0" prefHeight="20.0" prefWidth="180.0" />
+      <HBox layoutX="425.0" layoutY="3.0" prefHeight="50.0" prefWidth="200.0" spacing="1.0" style="-fx-background-color: #595959;">
+         <children>
+            <Button fx:id="pause" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" style="-fx-background-image: url(&quot;file:../EmulatorCPU853/images/pause.png&quot;);" styleClass="buttonClass" />
+            <Button fx:id="back" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" style="-fx-background-image: url(&quot;file:../EmulatorCPU853/images/backward.png&quot;);" styleClass="buttonClass" />
+            <Button fx:id="play" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" style="-fx-background-image: url(&quot;file:../EmulatorCPU853/images/play.png&quot;);" styleClass="buttonClass" />
+            <Button fx:id="forward" mnemonicParsing="false" onAction="#handle" prefHeight="20.0" prefWidth="40.0" style="-fx-background-image: url(&quot;file:../EmulatorCPU853/images/forward.png&quot;);;" styleClass="buttonClass" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
